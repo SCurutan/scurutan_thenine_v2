@@ -52,7 +52,7 @@ body {
 
 .league-btn {
     width: 20%;
-    margin-right: 13px;
+    margin: 0px 7px 10px 8px;
     float: left;
     background-color: #efb156;
     border-radius: 5px;
@@ -61,8 +61,8 @@ body {
 }
 
 .all-league-btn {
-    width: 90%;
-    margin: 13px 19px 0px 18px;
+    width: 91%;
+    margin: 13px 19px 0px 17px;
     float: left;
     background-color: #efb156;
     border-radius: 5px;
@@ -71,8 +71,8 @@ body {
     font-size: 19px;
 }
 
-#wnba-btn, #nwhl-btn {
-    margin-left: 19px;
+.btn-left-margin {
+    margin-left: 18px;
 }
 
 #wnba-btn, #wnbl-btn, #nwsl-btn, #fawsl-btn {
@@ -135,12 +135,13 @@ body {
     visibility: hidden;
 }
 
-/* .wnbl-score-one {
-    margin-top: -100px;
+/* #fawsl-scores, #wnbl-scores {
+    margin-top: -214px;
+}
+
+#tennis-scores {
+    margin-top: -1014px;
 } */
-
-
-
 
 /* #leagues {
     margin-top: -65px;

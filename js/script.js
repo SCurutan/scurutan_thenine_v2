@@ -39,71 +39,65 @@ $(document).on("click", "#menu a:last", loadLeagues);
 
 
 //filter scores based on league button clicked 
-//(SEE IF CAN OPTIMIZE TO MAKE SINGLE FUNCTION INSTEAD OF DIFFERENT FUNCTIONS PER LEAGUE)
-
 //wnba button clicked
 function filterWnba() {
-
-    $(".wnba-score").addClass("visible");
-    $(".score").addClass("not-visible");
+    $(".wnba-score").show();
+    $(".fawsl-score, .wnbl-score, .tennis-score, .nwhl-score, .olympics-score").hide();
 }
 
-$(document).on("click", "#wnba-btn", filterWnba);
-
-//wnbl button clicked
-function filterWnbl() {
-
-    $(".wnbl-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
-}
-
-$(document).on("click", "#wnbl-btn", filterWnbl);
-
-//tennis button clicked
-function filterTennis() {
-
-    $(".tennis-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
-}
-
-$(document).on("click", "#tennis-btn", filterTennis);
-
-//nwhl button clicked
-function filterNwhl() {
-
-    $(".nwhl-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
-}
-
-$(document).on("click", "#nwhl-btn", filterNwhl);
-
-//olympics button clicked
-function filterOlympics() {
-
-    $(".olympics-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
-}
-
-$(document).on("click", "#olympics-btn", filterOlympics);
+$(document).on("click", "#wnba-btn", filterWnba)
 
 //fawsl button clicked
 function filterFawsl() {
-
-    $(".fawsl-score").addClass("visible");
-    $(".score").addClass("not-visible");    
+    $(".fawsl-score").show();
+    $(".wnba-score, .wnbl-score, .tennis-score, .nwhl-score, .olympics-score").hide();
 }
 
-$(document).on("click", "#fawsl-btn", filterFawsl);
+$(document).on("click", "#fawsl-btn", filterFawsl)
+
+//wnbl button clicked
+function filterWnbl() {
+    $(".wnbl-score").show();
+    $(".wnba-score, .fawsl-score, .tennis-score, .nwhl-score, .olympics-score").hide();
+}
+
+$(document).on("click", "#wnbl-btn", filterWnbl)
+
+//tennis button clicked
+function filterTennis() {
+    $(".tennis-score").show();
+    $(".wnba-score, .fawsl-score, .wnbl-score, .nwhl-score, .olympics-score").hide();
+}
+
+$(document).on("click", "#tennis-btn", filterTennis)
+
+//nwhl button clicked
+function filterNwhl() {
+    $(".nwhl-score").show();
+    $(".wnba-score, .fawsl-score, .wnbl-score, .tennis-score, .olympics-score").hide();
+}
+
+$(document).on("click", "#nwhl-btn", filterNwhl)
+
+//olympic button clicked
+function filterOlympics() {
+    $(".olympics-score").show();
+    $(".wnba-score, .fawsl-score, .wnbl-score, .nwhl-score, .tennis-score").hide();
+}
+
+$(document).on("click", "#olympics-btn", filterOlympics)
+
+//mma/nwsl button clicked
+function filterNoScore() {
+    $(".wnba-score, .fawsl-score, .wnbl-score, .nwhl-score, .olympics-score, .tennis-score").hide();
+}
+
+$(document).on("click", "#mma-btn, #nwsl-btn", filterNoScore)
 
 //all scores button clicked
-function filterAll() {
 
-    $(".score").addClass("visible");
-    
+function filterAll() {
+    $(".wnba-score, .fawsl-btn, .wnbl-score, .tennis-score, .nwhl-score, .olympics-score").show();
 }
 
-$(document).on("click", "#all-scores-btn", filterAll);
+$(document).on("click", "#all-scores-btn", filterAll)
