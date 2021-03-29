@@ -12,8 +12,8 @@ function loadpage(e){
     e.preventDefault();
 
     //ADD ACTIVE CLASS ICONS FOR HOME PAGE ICONS//
-    // $("#menu a.active").removeClass("active");
-    // $(this).addClass("active");
+    // $("#menu a.active").removeClass("selected");
+    // $(this).addClass("selected");
 
     var href = $(this).attr("href");    
     $("#content").load(href);
