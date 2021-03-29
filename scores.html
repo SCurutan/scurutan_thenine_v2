@@ -1,83 +1,191 @@
 <!-- - CREATE PARALLAXED BOX SCORES
      - FIGURE OUT INFINITE SCROLL -->
 
-     <div class="container" id="scores">
-        <div class="filter-league row" id="score-filters">
-          <div class="league-btn">
-            <img src="img/league-btns/wnba.png" alt="WNBA score filter" id="wnba-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/wnbl.png" alt="WNBL score filter" id="wnbl-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/nwsl.png" alt="NWSL score filter" id="nwsl-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/fawsl.png" alt="FA WSL score filter" id="fawsl-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/nwhl.png" alt="NWHL score filter" id="nwhl-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/tennis.png" alt="Tennis score filter" id="tennis-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/mma.png" alt="MMA score filter" id="mma-btn">
-          </div>
-          <div class="league-btn">
-            <img src="img/league-btns/olympics.png" alt="Olympics score filter" id="olympics-btn">
-          </div>
-        </div>
-      
-        <div id="scores">
-          <div class="row">
-            <img src="img/scores/score-1.png" alt="WNBA score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="WNBA box score" id="wnba-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-2.png" alt="WNBA score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="WNBA box score" id="wnba-box-2">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-3.png" alt="FA WSL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="FA WSL box score" id="fawsl-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-4.png" alt="FA WSL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="FA WSL box score" id="fawsl-box-2">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-5.png" alt="WNBL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="WNBL box score" id="wnbl-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-6.png" alt="WNBL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="WNBL box score" id="wnbl-box-2">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-7.png" alt="Tennis score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="Tennis box score" id="tennis-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-8.png" alt="Tennis score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="Tennis box score" id="tennis-box-2">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-9.png" alt="NWHL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="NWHL box score" id="nwhl-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-10.png" alt="NWHL score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="NWHL box score" id="nwhl-box-2">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-11.png" alt="Olympic Beach Volleyball score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="Beach Volleyball box score" id="olympic-box-1">
-          </div>
-          <div class="row">
-            <img src="img/scores/score-12.png" alt="Olympic Beach Volleyball score" class="g-0">
-            <img src="img/scores/box-score-btn.png" alt="Beach Volleyball box score" id="olympic-box-2">
-          </div>
-        </div>
+<div class="container">
+  <div>
+      <button type="button" class="league-btn" id="wnba-btn">WNBA</button>
+      <button type="button" class="league-btn" id="wnbl-btn">WNBL</button>
+      <button type="button" class="league-btn" id="nwsl-btn">NWSL</button>
+      <button type="button" class="league-btn" id="fawsl-btn">FA WSL</button>
+      <button type="button" class="league-btn" id="nwhl-btn">NWHL</button>
+      <button type="button" class="league-btn" id="tennis-btn">Tennis</button>
+      <button type="button" class="league-btn" id="mma-btn">MMA</button>
+      <button type="button" class="league-btn" id="olympics-btn">Olympics</button>
+  </div>
+  
+  <div id="btn-bg">
+    Placeholder
+  </div>
+
+  <di id="scores">
+    Placeholder
+  </div>
+
+  <div class="row score-purple wnba-score score" id="test">
+      <div class="col team-score">
+        <p class="score-number">59</p>
+        <p class="team-name">LV Aces</p>
       </div>
-      
+      <div class="col team-score">
+        <p class="score-number">92</p>
+        <p class="team-name">SEA Storm</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+  </div>
+
+  <div class="row score-blue wnba-score score">
+    <div class="col team-score">
+      <p class="score-number">91</p>
+      <p class="team-name">LV Aces</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">104</p>
+      <p class="team-name">SEA Storm</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-purple nwsl-score-one score">
+    <div class="col team-score">
+      <p class="score-number">0</p>
+      <p class="team-name">Man U</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">3</p>
+      <p class="team-name">Man City</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-blue nwsl-score-two score">
+    <div class="col team-score">
+      <p class="score-number">0</p>
+      <p class="team-name">A.Villa</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">2</p>
+      <p class="team-name">Reading</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-purple wnbl-score score">
+    <div class="col team-score">
+      <p class="score-number">99</p>
+      <p class="team-name">Southside</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">82</p>
+      <p class="team-name">Townsville</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-blue wnbl-score score">
+    <div class="col team-score">
+      <p class="score-number">68</p>
+      <p class="team-name">Canberra</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">78</p>
+      <p class="team-name">Melbourne</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-purple tennis-score score">
+    <div class="col team-score">
+      <p class="score-number">2</p>
+      <p class="team-name">Andreescu</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">1</p>
+      <p class="team-name">Barty</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-blue tennis-score score">
+    <div class="col team-score">
+      <p class="score-number">2</p>
+      <p class="team-name">Osaka</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">1</p>
+      <p class="team-name">S.Williams</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-purple nwhl-score score">
+    <div class="col team-score">
+      <p class="score-number">1</p>
+      <p class="team-name">BUF Beauts</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">7</p>
+      <p class="team-name">BOS Pride</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-blue nwhl-score score">
+    <div class="col team-score">
+      <p class="score-number">6</p>
+      <p class="team-name">TOR Six</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">0</p>
+      <p class="team-name">CON Whale</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-purple olympics-score score">
+    <div class="col team-score">
+      <p class="score-number">0</p>
+      <p class="team-name">Canada</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">2</p>
+      <p class="team-name">U.S.A.</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+
+  <div class="row score-blue olympics-score score" id="last-score">
+    <div class="col team-score">
+      <p class="score-number">2</p>
+      <p class="team-name">Brazil</p>
+    </div>
+    <div class="col team-score">
+      <p class="score-number">0</p>
+      <p class="team-name">U.S.A.</p>
+    </div>
+    <div class="col">
+      <button type="button" class="box-btn">Box Score</button>
+    </div>
+  </div>
+</div>

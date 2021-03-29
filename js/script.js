@@ -1,3 +1,4 @@
+//load first page 
 function start(){
     $("#menu a:first").click();
 }
@@ -5,17 +6,19 @@ function start(){
 $(window).on("load", start);
 
 
+//load page user clicks on nav bar (apart from leagues page)
 function loadpage(e){
 
     e.preventDefault();
-    
+
+    //ADD ACTIVE CLASS ICONS FOR HOME PAGE ICONS//
     // $("#menu a.active").removeClass("active");
     // $(this).addClass("active");
-    //ADD ACTIVE CLASS ICONS FOR HOME PAGE ICONS//
 
     var href = $(this).attr("href");    
     $("#content").load(href);
 
+    //removes "hidden" class when navigating from leagues back to other pages
     $("#title").removeClass("hidden");
     $("#header-logo").removeClass("hidden");
 }
@@ -23,6 +26,7 @@ function loadpage(e){
 $(document).on("click", "#menu a", loadpage);
 
 
+//load leagues page user when user clicks icon on nav bar
 function loadleagues(e){
 
     e.preventDefault();
@@ -32,3 +36,28 @@ function loadleagues(e){
 }
 
 $(document).on("click", "#menu a:last", loadleagues);
+
+
+//filter scores based on league button clicked 
+//(SEE IF CAN OPTIMIZE TO MAKE SINGLE FUNCTION INSTEAD OF DIFFERENT FUNCTIONS PER LEAGUE)
+
+//wnba button clicked
+function filterwnba() {
+
+    $(".wnba-score").addClass("visible");
+    $(".score").addClass("not-visible");
+}
+
+$(document).on("click", "#wnba-btn", filterwnba);
+
+//wnbl button clicked
+function filterwnbl(e) {
+
+    e.preventDefault();
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#wnbl-btn", filterwnbl);

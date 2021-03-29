@@ -1,9 +1,18 @@
+/* general page styling */
+
 body {
     background-color: #0e0e28;
     color: #ffffff;
     font-family: 'Noto Sans', 'Arial', sans-serif;
     margin-top: -15px;
 }
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* header styling */
 
 .header {
     text-align: center;
@@ -22,12 +31,14 @@ body {
     opacity: 0.6;
 }
 
+/* nav bar styling */
+
 #menu {
-    background-color: #2b0844;
+    background-color: #24103e;
 }
 
 #nav-home, #nav-scores, #nav-news, #nav-comm, #nav-leagues {
-    width: 85%;
+    width: 100%;
 }
 
 .nav-item {
@@ -37,12 +48,90 @@ body {
     text-align: center;
 }
 
-.container {
-    padding: 0px;
-    margin: 0px;
+/* scores page styling */
+
+.league-btn {
+    width: 20%;
+    margin-right: 13px;
+    float: left;
+    background-color: #efb156;
+    border-radius: 5px;
+    color: #270c41;
+    border: solid #bc3c1b 2px;
 }
 
-#leagues {
+#wnba-btn, #nwhl-btn {
+    margin-left: 19px;
+}
+
+#wnba-btn, #wnbl-btn, #nwsl-btn, #fawsl-btn {
+    margin-bottom: 13px;
+}
+
+#btn-bg {
+    visibility: hidden;
+}
+
+.score-purple {
+    background-color: #270c41;
+    margin: 10px;
+}
+
+.score-blue {
+    background-color: #0e0f26;
+    margin: 10px;
+}
+
+.team-score {
+    background-color: white;
+    color: #bc3c1b;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 20px 10px 10px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+}
+
+.score-number {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.team-name {
+    font-size: 16px;
+    line-height: 0px;
+}
+
+.box-btn {
+    background-color: #bc3c1b;
+    border-radius: 6px;
+    color: white;
+    border: solid #efb156 2px;
+    font-size: 16px;
+    padding: 9px;
+    margin: 25px 0px 0px 1px;
+}
+
+#last-score {
+    margin-bottom: 120px;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.not-visible {
+    visibility: hidden;
+}
+
+/* .wnbl-score-one {
+    margin-top: -100px;
+} */
+
+
+
+
+/* #leagues {
     margin-top: -65px;
     margin-left: 10px;
 }
@@ -60,114 +149,11 @@ body {
     float: left;
     width: 25%;
     padding-left: 10px;
-
-}
-
-#wnba-btn, #wnbl-btn, #nwsl-btn, #fawsl-btn, #nwhl-btn, #tennis-btn, #mma-btn, #olympics-btn {
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-#score-filters {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#scores {
-        padding-left: 10px;
-}
-
-#wnba-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 170px;
-    left: 306px;
-}
-
-#wnba-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 269px;
-    left: 306px;
-}
-
-#fawsl-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 368px;
-    left: 306px;
-}
-
-#fawsl-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 466px;
-    left: 306px;
-}
-
-#wnbl-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 565px;
-    left: 306px;
-}
-
-#wnbl-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 664px;
-    left: 306px;
-}
-
-#tennis-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 763px;
-    left: 306px;
-}
-
-#tennis-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 861px;
-    left: 306px;
-}
-
-#nwhl-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 960px;
-    left: 306px;
-}
-
-#nwhl-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 1059px;
-    left: 306px;
-}
-
-#olympic-box-1 {
-    position: absolute;
-    width: 27%;
-    top: 1156px;
-    left: 306px;
-}
-
-#olympic-box-2 {
-    position: absolute;
-    width: 27%;
-    top: 1255px;
-    left: 306px;
-}
-
-#scores {
-    padding-bottom: 40px;
 }
 
 #videos, #news, #community {
     padding-bottom: 70px;
-}
+} */
 
 .hidden {
     opacity: 0 !important;
