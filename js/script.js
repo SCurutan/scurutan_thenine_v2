@@ -39,25 +39,12 @@ $(document).on("click", "#menu a:last", loadleagues);
 
 
 //filter scores based on league button clicked 
-//(SEE IF CAN OPTIMIZE TO MAKE SINGLE FUNCTION INSTEAD OF DIFFERENT FUNCTIONS PER LEAGUE)
-
-//wnba button clicked
-function filterwnba() {
-
-    $(".wnba-score").addClass("visible");
-    $(".score").addClass("not-visible");
-}
-
-$(document).on("click", "#wnba-btn", filterwnba);
-
-//wnbl button clicked
-function filterwnbl(e) {
+function loadscore(e){
 
     e.preventDefault();
 
-    $(".wnbl-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
+    var href = $(this).attr("href");    
+    $("#btn-bg").load(href);
 }
 
-$(document).on("click", "#wnbl-btn", filterwnbl);
+$(document).on("click", ".league-btn", loadscore);
