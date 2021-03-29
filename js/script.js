@@ -101,7 +101,7 @@ $(document).on("click", "#olympics-btn", filterOlympics)
 
 //nwsl button clicked
 function filterNwsl() {
-    $(".nwsl-sore").show();
+    $(".nwsl-score").show();
     $(".wnba-score, .fawsl-score, .wnbl-score, .nwhl-score, .olympics-score, .tennis-score, .mma-score").hide();
     $(this).addClass("selected");
     $(this).siblings().removeClass("selected");

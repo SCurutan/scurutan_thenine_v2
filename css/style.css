@@ -66,7 +66,7 @@ body {
 
 .all-league-btn {
     width: 91%;
-    margin: 13px 19px 15px 17px;
+    margin: 20px 19px 15px 17px;
     float: left;
     background-color: #bc3c1b;
     border-radius: 5px;
@@ -137,14 +137,55 @@ body {
     margin-bottom: 120px;
 }
 
-
-
-
-/* Test */
-.modal { 
-    display: none; 
+.box-score {
+    display: none;
 }
 
+.box-score-info {
+    color: #270c41;
+    text-align: center;
+    font-size: 23px;
+}
+
+.lightbox-padding {
+    padding: 20px;
+}
+
+.team {
+    color: #270c41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+}
+
+h1 {
+    color: #bc3c1b;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.score-table {
+    margin-top: 10px;
+}
+
+.second-team {
+    margin-top: 20px;
+}
+
+.player {
+    text-align: left;
+}
+
+.stats {
+    width: 18%
+}
+
+.two-col-stats {
+    width: 50%;
+}
 
 
 /* #leagues {
