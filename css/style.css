@@ -60,6 +60,17 @@ body {
     border: solid #bc3c1b 2px;
 }
 
+.all-league-btn {
+    width: 90%;
+    margin: 13px 19px 0px 18px;
+    float: left;
+    background-color: #efb156;
+    border-radius: 5px;
+    color: #270c41;
+    border: solid #bc3c1b 2px;
+    font-size: 19px;
+}
+
 #wnba-btn, #nwhl-btn {
     margin-left: 19px;
 }

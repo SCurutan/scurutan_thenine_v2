@@ -27,7 +27,7 @@ $(document).on("click", "#menu a", loadpage);
 
 
 //load leagues page user when user clicks icon on nav bar
-function loadleagues(e){
+function loadLeagues(e){
 
     e.preventDefault();
 
@@ -35,16 +35,86 @@ function loadleagues(e){
     $("#header-logo").addClass("hidden");
 }
 
-$(document).on("click", "#menu a:last", loadleagues);
+$(document).on("click", "#menu a:last", loadLeagues);
 
 
 //filter scores based on league button clicked 
-function loadscore(e){
+//(SEE IF CAN OPTIMIZE TO MAKE SINGLE FUNCTION INSTEAD OF DIFFERENT FUNCTIONS PER LEAGUE)
 
-    e.preventDefault();
+//wnba button clicked
+function filterWnba() {
 
-    var href = $(this).attr("href");    
-    $("#btn-bg").load(href);
+    $(".wnba-score").addClass("visible");
+    $(".score").addClass("not-visible");
 }
 
-$(document).on("click", ".league-btn", loadscore);
+$(document).on("click", "#wnba-btn", filterWnba);
+
+//nwsl button clicked
+function filternwsl() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#nwsl-btn", filternwsl);
+
+//wnbl button clicked
+function filterWnbl() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#wnbl-btn", filterWnbl);
+
+//tennis button clicked
+function filterTennis() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#tennis-btn", filterTennis);
+
+//nwhl button clicked
+function filterNwhl() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#nwhl-btn", filterNwhl);
+
+//olympics button clicked
+function filterOlympics() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#olympics-btn", filterOlympics);
+
+//fawsl button clicked
+function filterFawsl() {
+
+    $(".wnbl-score").addClass("visible");
+    $(".score").addClass("not-visible");
+    
+}
+
+$(document).on("click", "#wnbl-btn", filterFawsl);
+
+//all scores button clicked
+function filterAll() {
+
+    $(".score").addClass("visible");
+    
+}
+
+$(document).on("click", "#all-scores-btn", filterAll);
