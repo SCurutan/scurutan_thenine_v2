@@ -12,6 +12,10 @@ body {
     margin: 0px;
 }
 
+.selected {
+    opacity: 0.5;
+}
+
 /* header styling */
 
 .header {
@@ -62,21 +66,22 @@ body {
 
 .all-league-btn {
     width: 91%;
-    margin: 13px 19px 0px 17px;
+    margin: 13px 19px 15px 17px;
     float: left;
-    background-color: #efb156;
+    background-color: #bc3c1b;
     border-radius: 5px;
     color: #270c41;
-    border: solid #bc3c1b 2px;
+    border: solid #efb156 2px;
     font-size: 19px;
+    color: white;
 }
 
 .btn-left-margin {
     margin-left: 18px;
 }
 
-#wnba-btn, #wnbl-btn, #nwsl-btn, #fawsl-btn {
-    margin-bottom: 13px;
+#nwhl-btn, #tennis-btn, #mma-btn, #olympics-btn {
+    margin-bottom: 0px;
 }
 
 #btn-bg {
@@ -113,6 +118,11 @@ body {
     line-height: 0px;
 }
 
+.ol-sport {
+    font-size: 13px;
+    line-height: 0px;
+}
+
 .box-btn {
     background-color: #bc3c1b;
     border-radius: 6px;
@@ -127,21 +137,15 @@ body {
     margin-bottom: 120px;
 }
 
-.visible {
-    visibility: visible !important;
+
+
+
+/* Test */
+.modal { 
+    display: none; 
 }
 
-.not-visible {
-    visibility: hidden;
-}
 
-/* #fawsl-scores, #wnbl-scores {
-    margin-top: -214px;
-}
-
-#tennis-scores {
-    margin-top: -1014px;
-} */
 
 /* #leagues {
     margin-top: -65px;
@@ -167,6 +171,6 @@ body {
     padding-bottom: 70px;
 } */
 
-.hidden {
+/* .hidden {
     opacity: 0 !important;
-}
+} */

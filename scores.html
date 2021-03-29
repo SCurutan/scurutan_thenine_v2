@@ -2,7 +2,15 @@
      - FIGURE OUT INFINITE SCROLL -->
 
 <div class="container">
-  <div>
+
+          <a href="#" data-featherlight="#modal-example">Show me!</a>
+          <div id="modal-example" class="modal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, odio! Sint similique nam neque hic dolores quas officia voluptate alias beatae, voluptates consequatur iusto minus, minima modi! Porro, dolorem ipsum!</div>
+
+
+
+    <a href="#" id="all-scores-btn">
+    <button type="button" class="all-league-btn">All Scores</button>
+    </a>
     <a href="#" id="wnba-btn">
       <button type="button" class="league-btn btn-left-margin">WNBA</button>
     </a>
@@ -25,12 +33,8 @@
       <button type="button" class="league-btn">MMA</button>
     </a>
     <a href="#" id="olympics-btn">
-        <button type="button" class="league-btn" id="olympics-btn">Olympics</button>
+        <button type="button" class="league-btn">Olympics</button>
     </a>
-  </div>
-  
-  <div>
-    <button type="button" class="all-league-btn" id="all-scores-btn">All Scores</button>
   </div>
   
   <div id="btn-bg">
@@ -38,7 +42,7 @@
   </div>
 
   <div id="scores">
-    <div class="row score-purple wnba-score score" id="test">
+    <div class="row score-purple wnba-score" id="test">
       <div class="col team-score">
         <p class="score-number">59</p>
         <p class="team-name">LV Aces</p>
@@ -52,7 +56,7 @@
       </div>
     </div>
   
-    <div class="row score-blue wnba-score score">
+    <div class="row score-blue wnba-score">
       <div class="col team-score">
         <p class="score-number">91</p>
         <p class="team-name">LV Aces</p>
@@ -65,36 +69,8 @@
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
-  
-    <div class="row score-purple fawsl-score score">
-      <div class="col team-score">
-        <p class="score-number">0</p>
-        <p class="team-name">Man U</p>
-      </div>
-      <div class="col team-score">
-        <p class="score-number">3</p>
-        <p class="team-name">Man City</p>
-      </div>
-      <div class="col">
-        <button type="button" class="box-btn">Box Score</button>
-      </div>
-    </div>
-  
-    <div class="row score-blue fawsl-score score">
-      <div class="col team-score">
-        <p class="score-number">0</p>
-        <p class="team-name">A.Villa</p>
-      </div>
-      <div class="col team-score">
-        <p class="score-number">2</p>
-        <p class="team-name">Reading</p>
-      </div>
-      <div class="col">
-        <button type="button" class="box-btn">Box Score</button>
-      </div>
-    </div>
-    
-    <div class="row score-purple wnbl-score score" id=>
+
+    <div class="row score-purple wnbl-score" id=>
       <div class="col team-score">
         <p class="score-number">99</p>
         <p class="team-name">Southside</p>
@@ -108,7 +84,7 @@
       </div>
     </div>
     
-    <div class="row score-blue wnbl-score score">
+    <div class="row score-blue wnbl-score">
       <div class="col team-score">
         <p class="score-number">68</p>
         <p class="team-name">Canberra</p>
@@ -121,36 +97,64 @@
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
+
+    <div class="row score-purple nwsl-score" id=>
+      <div class="col team-score">
+        <p class="score-number">2</p>
+        <p class="team-name">ORL Pride</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">4</p>
+        <p class="team-name">POR Thorns</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
+    
+    <div class="row score-blue nwsl-score">
+      <div class="col team-score">
+        <p class="score-number">0</p>
+        <p class="team-name">UTH Royals</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">1</p>
+        <p class="team-name">CHI R.Stars</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
   
-    <div class="row score-purple tennis-score score">
+    <div class="row score-purple fawsl-score">
       <div class="col team-score">
-        <p class="score-number">2</p>
-        <p class="team-name">Andreescu</p>
+        <p class="score-number">0</p>
+        <p class="team-name">Man U</p>
       </div>
       <div class="col team-score">
-        <p class="score-number">1</p>
-        <p class="team-name">Barty</p>
+        <p class="score-number">3</p>
+        <p class="team-name">Man City</p>
       </div>
       <div class="col">
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
-    
-    <div class="row score-blue tennis-score score">
+  
+    <div class="row score-blue fawsl-score">
       <div class="col team-score">
-        <p class="score-number">2</p>
-        <p class="team-name">Osaka</p>
+        <p class="score-number">0</p>
+        <p class="team-name">A.Villa</p>
       </div>
       <div class="col team-score">
-        <p class="score-number">1</p>
-        <p class="team-name">S.Williams</p>
+        <p class="score-number">2</p>
+        <p class="team-name">Reading</p>
       </div>
       <div class="col">
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
-    
-    <div class="row score-purple nwhl-score score">
+
+    <div class="row score-purple nwhl-score">
       <div class="col team-score">
         <p class="score-number">1</p>
         <p class="team-name">BUF Beauts</p>
@@ -164,7 +168,7 @@
       </div>
     </div>
   
-    <div class="row score-blue nwhl-score score">
+    <div class="row score-blue nwhl-score">
       <div class="col team-score">
         <p class="score-number">6</p>
         <p class="team-name">TOR Six</p>
@@ -177,29 +181,89 @@
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
+  
+    <div class="row score-purple tennis-score">
+      <div class="col team-score">
+        <p class="score-number">2</p>
+        <p class="team-name">B.Andreescu</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">1</p>
+        <p class="team-name">A.Barty</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
     
-    <div class="row score-purple olympics-score score">
+    <div class="row score-blue tennis-score">
+      <div class="col team-score">
+        <p class="score-number">2</p>
+        <p class="team-name">N.Osaka</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">1</p>
+        <p class="team-name">S.Williams</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
+
+    <div class="row score-blue mma-score">
+      <div class="col team-score">
+        <p class="score-number">3</p>
+        <p class="team-name">A.Nunes</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">0</p>
+        <p class="team-name">S.Gaff</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
+    
+    <div class="row score-blue mma-score">
+      <div class="col team-score">
+        <p class="score-number">2</p>
+        <p class="team-name">F.Spencer</p>
+      </div>
+      <div class="col team-score">
+        <p class="score-number">1</p>
+        <p class="team-name">D.Wolf</p>
+      </div>
+      <div class="col">
+        <button type="button" class="box-btn">Box Score</button>
+      </div>
+    </div>
+    
+    <div class="row score-purple olympics-score">
       <div class="col team-score">
         <p class="score-number">0</p>
         <p class="team-name">Canada</p>
+        <p class="ol-sport">(Volleyball)</p>
       </div>
       <div class="col team-score">
         <p class="score-number">2</p>
         <p class="team-name">U.S.A.</p>
+        <p class="ol-sport">(Volleyball)</p>
       </div>
       <div class="col">
         <button type="button" class="box-btn">Box Score</button>
       </div>
     </div>
   
-    <div class="row score-blue olympics-score score" id="last-score">
+    <div class="row score-blue olympics-score" id="last-score">
       <div class="col team-score">
         <p class="score-number">2</p>
         <p class="team-name">Brazil</p>
+        <p class="ol-sport">(Volleyball)</p>
       </div>
       <div class="col team-score">
         <p class="score-number">0</p>
         <p class="team-name">U.S.A.</p>
+        <p class="ol-sport">(Volleyball)</p>
       </div>
       <div class="col">
         <button type="button" class="box-btn">Box Score</button>
