@@ -50,16 +50,6 @@ function filterWnba() {
 
 $(document).on("click", "#wnba-btn", filterWnba);
 
-//nwsl button clicked
-function filternwsl() {
-
-    $(".wnbl-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
-}
-
-$(document).on("click", "#nwsl-btn", filternwsl);
-
 //wnbl button clicked
 function filterWnbl() {
 
@@ -73,7 +63,7 @@ $(document).on("click", "#wnbl-btn", filterWnbl);
 //tennis button clicked
 function filterTennis() {
 
-    $(".wnbl-score").addClass("visible");
+    $(".tennis-score").addClass("visible");
     $(".score").addClass("not-visible");
     
 }
@@ -83,7 +73,7 @@ $(document).on("click", "#tennis-btn", filterTennis);
 //nwhl button clicked
 function filterNwhl() {
 
-    $(".wnbl-score").addClass("visible");
+    $(".nwhl-score").addClass("visible");
     $(".score").addClass("not-visible");
     
 }
@@ -93,7 +83,7 @@ $(document).on("click", "#nwhl-btn", filterNwhl);
 //olympics button clicked
 function filterOlympics() {
 
-    $(".wnbl-score").addClass("visible");
+    $(".olympics-score").addClass("visible");
     $(".score").addClass("not-visible");
     
 }
@@ -103,12 +93,11 @@ $(document).on("click", "#olympics-btn", filterOlympics);
 //fawsl button clicked
 function filterFawsl() {
 
-    $(".wnbl-score").addClass("visible");
-    $(".score").addClass("not-visible");
-    
+    $(".fawsl-score").addClass("visible");
+    $(".score").addClass("not-visible");    
 }
 
-$(document).on("click", "#wnbl-btn", filterFawsl);
+$(document).on("click", "#fawsl-btn", filterFawsl);
 
 //all scores button clicked
 function filterAll() {
