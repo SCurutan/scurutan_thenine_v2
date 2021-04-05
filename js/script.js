@@ -5,15 +5,14 @@ function start(){
 
 $(window).on("load", start);
 
-
 //load page user clicks on nav bar (apart from leagues page)
 function loadpage(e){
 
     e.preventDefault();
 
-    //ADD ACTIVE CLASS ICONS FOR HOME PAGE ICONS//
-    // $("#menu a.active").removeClass("selected");
-    // $(this).addClass("selected");
+    //add "selected" class to indicate which nav page the user is on
+    $("#menu a.selected").removeClass("selected");
+    $(this).addClass("selected");
 
     var href = $(this).attr("href");    
     $("#content").load(href);
