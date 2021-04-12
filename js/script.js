@@ -5,7 +5,14 @@ function start(){
 
 $(window).on("load", start);
 
-//load page user clicks on nav bar (apart from leagues page)
+//reload first page to load IG videos on home page 
+        // function homePage(){
+        //     location.reload();
+        // }
+
+        // $(document).on("click", "#menu a:first", homePage);
+
+//load page user clicks on nav bar (apart from leagues page which has extra styling added to page)
 function loadpage(e){
 
     e.preventDefault();

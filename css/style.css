@@ -53,6 +53,12 @@ body {
     text-align: center;
 }
 
+/* home page videos styling */
+
+.ig-video {
+    padding: 0px 20px 20px 20px;
+    }
+
 /* scores page styling */
 
 .league-btn {
@@ -188,7 +194,7 @@ h1 {
 /* news page styling */
 
 .news-item {
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     display: flex;
 }
 
@@ -198,8 +204,7 @@ h1 {
 }
 
 .article-box {
-    background-color: #270C41;
-    opacity: 0.8;
+    background: rgba(39, 12, 65, 0.8);
     height: 40px;
     width: 100%;
     position: absolute;
@@ -207,9 +212,26 @@ h1 {
     padding: 7px 0px 0px 15px;
 }
 
-#wnba-tweets {
-    height: 100px;
+.league-tweets {
+    padding-bottom: 20px;
+    text-align: center;
 }
+
+#last-tweet {
+    padding-bottom: 100px;
+}
+
+/* news article styling */
+
+.article {
+    display: none;
+}
+
+.lightbox-padding-news {
+    padding: 50px;
+}
+
+
 
 
 
