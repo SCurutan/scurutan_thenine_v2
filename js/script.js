@@ -5,13 +5,6 @@ function start(){
 
 $(window).on("load", start);
 
-//reload first page to load IG videos on home page 
-        // function homePage(){
-        //     location.reload();
-        // }
-
-        // $(document).on("click", "#menu a:first", homePage);
-
 //load page user clicks on nav bar (apart from leagues page which has extra styling added to page)
 function loadpage(e){
 
@@ -22,11 +15,18 @@ function loadpage(e){
     $(this).addClass("selected");
 
     var href = $(this).attr("href");    
-    $("#content").load(href);
+
+    $("#content").load(href, reloadIG);
+    function reloadIG(){
+        window.instgrm.Embeds.process();
+}
 
     //removes "hidden" class when navigating from leagues back to other pages
     $("#title").removeClass("hidden");
     $("#header-logo").removeClass("hidden");
+
+    // reveals content with delay
+    ScrollReveal().reveal('.reveal', { delay: 5000 });
 }
 
 $(document).on("click", "#menu a", loadpage);
@@ -133,3 +133,45 @@ function filterAll() {
 }
 
 $(document).on("click", "#all-scores-btn", filterAll)
+
+// community page - adding comments to discussion board
+                function begin(){
+                    $("div.page:first").show();
+                }
+
+                begin();
+                
+                function collect(){
+                
+                    var obj = {};
+                  
+                  $("input[name]").each(function(){
+                      var text = $(this).val();
+                    var name = $(this).attr("name");
+                        obj[name] = text;
+                    })
+                
+                    var data = JSON.stringify(obj);
+                    $("#json").val(data);
+                
+                }
+                
+                
+                function proceed(){
+                
+                    var item = $("div.page:visible");
+                  
+                  item.next(".page").show();
+                  item.hide();
+                  
+                  var index = item.next(".page").index();
+                
+                    if (index == 3) {
+                      $("#next").remove();
+                  }
+                  
+                  collect();
+                
+                }
+                
+                $(document).on("click", "#next", proceed);

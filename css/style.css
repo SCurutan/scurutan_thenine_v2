@@ -228,43 +228,68 @@ h1 {
 }
 
 .lightbox-padding-news {
-    padding: 50px;
+    padding: 10px;
 }
 
+/* community page styling */
 
+.comm-item {
+    display: none;
+}
 
+#panel {
+    padding-bottom: 125px;
+}
 
+.submit-btn {
+    width: 100%;
+    margin: 0px 7px 10px 8px;
+    float: left;
+    background-color: #efb156;
+    border-radius: 5px;
+    color: #270c41;
+    border: solid #bc3c1b 2px;
+}
 
-/* #leagues {
+h2 {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    color: #270c41;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    color: #bc3c1b;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic, bold;
+    padding-top: 10px;
+}
+
+/* league page styling */
+.hidden {
+    opacity: 0 !important;
+}
+
+#leagues {
     margin-top: -65px;
-    margin-left: 10px;
 }
 
 #wnba, #wnbl, #nwsl, #fawsl, #nwhl, #tennis, #mma, #olympics {
     width: 100%;
-    padding-bottom: 20px;
 }
 
-.comm-item {
-    padding-bottom: 15px;
+#nwsl {
+    position: absolute; 
+    width: 50%;
+    margin-top: -483px;
 }
 
-.league-btn {
+.league-selection {
     float: left;
-    width: 25%;
-    padding-left: 10px;
+    width: 50%;
 }
 
-#videos, #news, #community {
-    padding-bottom: 70px;
-} */
-
-/* .hidden {
-    opacity: 0 !important;
-} */
-
-/* .ol-sport {
-    font-size: 13px;
-    line-height: 0px;
-    border: red solid 1px;
-} */
+.league-info {
+    display: none;
+}
