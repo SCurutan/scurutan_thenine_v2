@@ -59,6 +59,14 @@ body {
     padding: 0px 20px 20px 20px;
     }
 
+h4 {
+    color: #24103e;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px 10px 10px;
+    background: rgba(250, 175, 64, 0.7);
+}
+
 /* scores page styling */
 
 .league-btn {
@@ -212,6 +220,12 @@ h1 {
     padding: 7px 0px 0px 15px;
 }
 
+h5 {
+    font-family: 'Noto Sans', 'Arial', sans-serif;
+    color: rgba(14, 15, 38, 0.7);
+    font-size: 14px;
+}
+
 .league-tweets {
     padding-bottom: 20px;
     text-align: center;
@@ -266,6 +280,10 @@ h3 {
     padding-top: 10px;
 }
 
+#send-btn {
+    margin-left: 0px;
+}
+
 /* league page styling */
 .hidden {
     opacity: 0 !important;
@@ -292,4 +310,25 @@ h3 {
 
 .league-info {
     display: none;
+}
+
+h6 {
+    color: #bc3c1b;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.article-name {
+    color: #bc3c1b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.score-leagues {
+    margin: 0px;
+    background: none;
+}
+
+.box-btn-leagues {
+    margin-top: 12px;
 }

@@ -19,6 +19,18 @@ function loadpage(e){
     $("#content").load(href, reloadIG);
     function reloadIG(){
         window.instgrm.Embeds.process();
+
+    if (href == "index.html") {
+        $("#title").text("The Nine");
+    } else if (href == "news.html") {
+        $("#title").text("News");
+    } else if (href == "scores.html") {
+        $("#title").text("Scores");
+    } else if (href == "videos.html") {
+        $("#title").text("The Nine");
+    } else if (href == "community.html") {
+        $("#title").text("Community");
+    }
 }
 
     //removes "hidden" class when navigating from leagues back to other pages
@@ -133,45 +145,3 @@ function filterAll() {
 }
 
 $(document).on("click", "#all-scores-btn", filterAll)
-
-// community page - adding comments to discussion board
-                function begin(){
-                    $("div.page:first").show();
-                }
-
-                begin();
-                
-                function collect(){
-                
-                    var obj = {};
-                  
-                  $("input[name]").each(function(){
-                      var text = $(this).val();
-                    var name = $(this).attr("name");
-                        obj[name] = text;
-                    })
-                
-                    var data = JSON.stringify(obj);
-                    $("#json").val(data);
-                
-                }
-                
-                
-                function proceed(){
-                
-                    var item = $("div.page:visible");
-                  
-                  item.next(".page").show();
-                  item.hide();
-                  
-                  var index = item.next(".page").index();
-                
-                    if (index == 3) {
-                      $("#next").remove();
-                  }
-                  
-                  collect();
-                
-                }
-                
-                $(document).on("click", "#next", proceed);
