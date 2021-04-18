@@ -37,12 +37,9 @@ function loadpage(e){
     $("#title").removeClass("hidden");
     $("#header-logo").removeClass("hidden");
 
-    // reveals content with delay
-    ScrollReveal().reveal('.reveal', { delay: 5000 });
 }
 
 $(document).on("click", "#menu a", loadpage);
-
 
 //load leagues page user when user clicks icon on nav bar
 function loadLeagues(e){
@@ -54,7 +51,6 @@ function loadLeagues(e){
 }
 
 $(document).on("click", "#menu a:last", loadLeagues);
-
 
 //filter scores based on league button clicked 
 //wnba button clicked
@@ -145,3 +141,51 @@ function filterAll() {
 }
 
 $(document).on("click", "#all-scores-btn", filterAll)
+
+//infinite scroll 
+
+var scrollLoad = true;
+
+$(window).scroll(function () { 
+  if (scrollLoad && $(window).scrollTop() >= $(document).height() - $(window).height() - 300) {
+    scrollLoad = false;
+  }
+});
+
+//interactive comment section
+
+//add comment to list
+
+function insert(){
+
+    var item = $("#text").val();
+   if (item == "") {
+   	alert("Please enter comment in text field");
+   } else {
+   	var html = '<li class="list-group-item">'+item+'</li>';
+  	$("#list").append(html);
+    $("#text").val(""); 
+  }
+  
+  save();
+
+}
+
+function save(){
+	var html = $("#list").html();
+  localStorage.setItem("todo", html);
+}
+
+function load(){
+	var html = localStorage.getItem("todo");
+  $("#list").html(html);
+}
+
+$("#add").click(insert);
+load();
+
+//view past comments from other users
+
+$( "#toggle" ).click(function() {
+    $(".discuss").toggle("fast");
+  });

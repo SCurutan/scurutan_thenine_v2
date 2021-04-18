@@ -280,8 +280,41 @@ h3 {
     padding-top: 10px;
 }
 
-#send-btn {
+/* #send-btn {
     margin-left: 0px;
+} */
+
+ul li {
+    color: #270c41;
+    font-size: 18px;
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+.discuss {
+    margin: 0px 15px 0px 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#toggle {
+    margin: 50px 0px 0px 0px;
+    float: none;
+}
+
+#add {
+    margin: 10px 0px 0px 0px;
+}
+
+.white-font {
+    color: white;
+}
+
+.list-group-item {
+    background: none;
+    color: white;
 }
 
 /* league page styling */
