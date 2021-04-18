@@ -154,7 +154,7 @@ $(window).scroll(function () {
 
 //interactive comment section
 
-//add comment to list
+//add comment to discussion board for kobe/gigi
 
 function insert(){
 
@@ -165,6 +165,7 @@ function insert(){
    	var html = '<li class="list-group-item">'+item+'</li>';
   	$("#list").append(html);
     $("#text").val(""); 
+    alert("Thank you so much for contributing to The Nine Community");
   }
   
   save();
@@ -173,19 +174,58 @@ function insert(){
 
 function save(){
 	var html = $("#list").html();
-  localStorage.setItem("todo", html);
+  localStorage.setItem("comment", html);
 }
 
 function load(){
-	var html = localStorage.getItem("todo");
+	var html = localStorage.getItem("comment");
   $("#list").html(html);
 }
 
 $("#add").click(insert);
+
 load();
 
-//view past comments from other users
+//add comment to discussion board for tokyo
 
-$( "#toggle" ).click(function() {
-    $(".discuss").toggle("fast");
+function insertTokyo(){
+
+    var item = $("#textTokyo").val();
+   if (item == "") {
+   	alert("Please enter comment in text field");
+   } else {
+   	var html = '<li class="list-group-item">'+item+'</li>';
+  	$("#listTokyo").append(html);
+    $("#textTokyo").val(""); 
+    alert("Thank you so much for contributing to The Nine Community");
+  }
+  
+  saveTokyo();
+
+}
+
+function saveTokyo(){
+	var html = $("#listTokyo").html();
+  localStorage.setItem("commentTokyo", html);
+}
+
+function loadTokyo(){
+	var html = localStorage.getItem("commentTokyo");
+  $("#listTokyo").html(html);
+}
+
+$("#addTokyo").click(insertTokyo);
+
+loadTokyo();
+
+//view past comments from other users for kobe/gigi
+
+$( "#toggle-one" ).click(function() {
+    $("#discuss-one").toggle("fast");
+  });
+
+//view past comments from other users for tokyo
+
+$( "#toggle-two" ).click(function() {
+    $("#discuss-two").toggle("fast");
   });

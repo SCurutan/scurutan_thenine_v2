@@ -255,16 +255,6 @@ h5 {
     padding-bottom: 125px;
 }
 
-.submit-btn {
-    width: 100%;
-    margin: 0px 7px 10px 8px;
-    float: left;
-    background-color: #efb156;
-    border-radius: 5px;
-    color: #270c41;
-    border: solid #bc3c1b 2px;
-}
-
 h2 {
     font-family: 'Noto Sans', 'Arial', sans-serif;
     color: #270c41;
@@ -280,10 +270,6 @@ h3 {
     padding-top: 10px;
 }
 
-/* #send-btn {
-    margin-left: 0px;
-} */
-
 ul li {
     color: #270c41;
     font-size: 18px;
@@ -291,7 +277,7 @@ ul li {
     margin-left: 0px;
 }
 
-.discuss {
+#discuss-one, #discuss-two {
     margin: 0px 15px 0px 15px;
 }
 
@@ -299,12 +285,12 @@ ul li {
     display: none;
 }
 
-#toggle {
+#toggle-one, #toggle-two {
     margin: 50px 0px 0px 0px;
     float: none;
 }
 
-#add {
+#add, #addTokyo {
     margin: 10px 0px 0px 0px;
 }
 
