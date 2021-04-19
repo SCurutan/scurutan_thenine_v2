@@ -59,6 +59,10 @@ body {
     padding: 0px 20px 20px 20px;
     }
 
+#last-video {
+    margin-bottom: 100px;
+}
+
 h4 {
     color: #24103e;
     font-size: 20px;
@@ -101,6 +105,7 @@ h4 {
 
 #btn-bg {
     visibility: hidden;
+    font-size: 7px;
 }
 
 .score-purple {
@@ -197,8 +202,6 @@ h1 {
     width: 50%;
 }
 
-}
-
 /* news page styling */
 
 .news-item {
@@ -265,7 +268,6 @@ h3 {
     font-family: 'Noto Sans', 'Arial', sans-serif;
     color: #bc3c1b;
     font-size: 20px;
-    text-align: center;
     font-style: italic, bold;
     padding-top: 10px;
 }
@@ -303,13 +305,17 @@ ul li {
     color: white;
 }
 
+.comment-board {
+    padding-bottom: 40px;
+}
+
 /* league page styling */
 .hidden {
     opacity: 0 !important;
 }
 
 #leagues {
-    margin-top: -65px;
+    margin-top: -77px;
 }
 
 #wnba, #wnbl, #nwsl, #fawsl, #nwhl, #tennis, #mma, #olympics {
@@ -350,4 +356,6 @@ h6 {
 
 .box-btn-leagues {
     margin-top: 12px;
+}
+
 }

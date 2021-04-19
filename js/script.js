@@ -16,9 +16,13 @@ function loadpage(e){
 
     var href = $(this).attr("href");    
 
+    //reload IG video content when navigating back to home page 
+
     $("#content").load(href, reloadIG);
     function reloadIG(){
         window.instgrm.Embeds.process();
+
+    //different headers per section of app
 
     if (href == "index.html") {
         $("#title").text("The Nine");
@@ -41,7 +45,7 @@ function loadpage(e){
 
 $(document).on("click", "#menu a", loadpage);
 
-//load leagues page user when user clicks icon on nav bar
+//load leagues page when user clicks leagues icon on nav bar
 function loadLeagues(e){
 
     e.preventDefault();
@@ -142,16 +146,6 @@ function filterAll() {
 
 $(document).on("click", "#all-scores-btn", filterAll)
 
-//infinite scroll 
-
-var scrollLoad = true;
-
-$(window).scroll(function () { 
-  if (scrollLoad && $(window).scrollTop() >= $(document).height() - $(window).height() - 300) {
-    scrollLoad = false;
-  }
-});
-
 //interactive comment section
 
 //add comment to discussion board for kobe/gigi
@@ -159,11 +153,11 @@ $(window).scroll(function () {
 function insert(){
 
     var item = $("#text").val();
-   if (item == "") {
-   	alert("Please enter comment in text field");
-   } else {
-   	var html = '<li class="list-group-item">'+item+'</li>';
-  	$("#list").append(html);
+  if (item == "") {
+    alert("Please enter comment in text field");
+  } else {
+    var html = '<li class="list-group-item">'+item+'</li>';
+    $("#list").append(html);
     $("#text").val(""); 
     alert("Thank you so much for contributing to The Nine Community");
   }
@@ -173,12 +167,12 @@ function insert(){
 }
 
 function save(){
-	var html = $("#list").html();
+  var html = $("#list").html();
   localStorage.setItem("comment", html);
 }
 
 function load(){
-	var html = localStorage.getItem("comment");
+  var html = localStorage.getItem("comment");
   $("#list").html(html);
 }
 
@@ -191,11 +185,11 @@ load();
 function insertTokyo(){
 
     var item = $("#textTokyo").val();
-   if (item == "") {
-   	alert("Please enter comment in text field");
-   } else {
-   	var html = '<li class="list-group-item">'+item+'</li>';
-  	$("#listTokyo").append(html);
+  if (item == "") {
+    alert("Please enter comment in text field");
+  } else {
+    var html = '<li class="list-group-item">'+item+'</li>';
+    $("#listTokyo").append(html);
     $("#textTokyo").val(""); 
     alert("Thank you so much for contributing to The Nine Community");
   }
@@ -205,12 +199,12 @@ function insertTokyo(){
 }
 
 function saveTokyo(){
-	var html = $("#listTokyo").html();
+  var html = $("#listTokyo").html();
   localStorage.setItem("commentTokyo", html);
 }
 
 function loadTokyo(){
-	var html = localStorage.getItem("commentTokyo");
+  var html = localStorage.getItem("commentTokyo");
   $("#listTokyo").html(html);
 }
 
